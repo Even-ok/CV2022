@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/voiceContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoiceFragment"
+    android:background="@drawable/background">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/voice_background"/>
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/wave_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="60dp" />
+
+
+        <LinearLayout
+            android:id="@+id/hintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/wave_head"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="sans-serif-smallcaps"-->
+<!--                android:text="测试前，请调试好您的设备"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="sans-serif-smallcaps"-->
+<!--                android:text="保证录制声音清晰"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textSize="17sp" />-->
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:background="#212121"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+            >
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#44ffffff" />
+
+        <TextView
+            android:id="@+id/startRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="13dp"
+            android:paddingBottom="20dp"
+            android:text="开始录音"
+            android:onClick="click"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>
